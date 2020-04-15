@@ -1,3 +1,5 @@
+require 'date'
+
 class Event
 
   attr_reader :name, :food_trucks
@@ -70,5 +72,9 @@ class Event
 
   def sorted_item_list
     find_total_food_items.map {|item| item.name}.sort
+  end
+
+  def date
+    
   end
 end
